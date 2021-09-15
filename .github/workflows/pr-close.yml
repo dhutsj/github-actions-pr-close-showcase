@@ -3,6 +3,9 @@ name: Close Pull Request
 # only trigger on pull request closed events
 on:
   pull_request:
+    branches: [ master ]
+    paths:
+      - 'README.md'
     types: [ closed ]
 
 jobs:
